@@ -3,14 +3,18 @@ const content = document.querySelector(".container");
 const menuIcon = document.querySelector(".menuIcon");
 let startingX;
 let isOpen = false;
+document.getElementById("upperLine").style.display = "block";
 
 function menuOpen() {
-    menuIcon.style.display = "none";
-    content.style.filter = "blur(8px)";
+    document.getElementById("upperLine").style.display = "none";
+    isOpen = true;
+    addFilter();
 }
 function menuClose() {
-    menuIcon.style.display = "block";
+	document.getElementById("upperLine").style.display = "block";
     content.style.filter = "none";
+    isOpen = false;
+    addFilter();
 }
 //Кнопки
 function openMenu() {
@@ -49,17 +53,15 @@ function contentHandleTouchMove(evt) {
 }
 
 function contentHandleTouchEnd(evt) {
-    var change = startingX - evt.changedTouches[0].clientX;
-    var treshold = screen.width / 2;
+    var change = startingX - evt.changedTouches[0].clientX
+    var treshold = screen.width / 2
 
     if (-change < treshold) {
-        menu.style.left = -100 + '%';
-        menuClose();
+        menu.style.left = -100 + '%'
+        menuClose()
     } else {
-        menu.style.left = 0 + '%';
-        menuOpen();
-        isOpen = true;
-        console.log(isOpen);
+        menu.style.left = 0 + '%'
+        menuOpen()
     }
 }
 
@@ -98,8 +100,21 @@ function menuConteinerTouchEnd(evt) {
 
     } else {
         menu.style.left = -100 + '%';
-        menuClose();
-        isOpen = false;
-        console.log(isOpen);
+		menuClose();
+    }
+}
+function addFilter() {
+    
+    var blur = localStorage["blurBtnActivated"];
+    if (blur == null) {
+        return;
+    }
+    else {
+        if (isOpen) {
+            content.style.filter = "blur(5px)";
+        }
+        else {
+            content.style.filter = "none";
+        }
     }
 }

@@ -1,0 +1,15 @@
+.item{
+	display: flex;
+	justify-content: center;
+	padding: 5px 0px;
+}
+.item select{
+	width: 100%;
+	text-align: center;
+}
+.item button{
+	width: 80%;
+	text-align: center;
+	height: 30px;
+	border-radius: 15px;
+}

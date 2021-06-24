@@ -1,0 +1,36 @@
+/*КОНТЕНТ*/
+
+.item {
+	text-align: center;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.phoneEmailLine{
+	display: flex;
+	font-size: calc(15px + (35 - 15) * ( (100vw - 200px) / ( 1024 - 200) ));
+	background-color: #FFF;
+}
+	.item p.text {
+		padding: 0;
+		margin: 0;
+		font-size: calc(20px + (35 - 20) * ( (100vw - 200px) / ( 1024 - 200) ));
+		background-color: #FFF;
+		width: 100%;
+	}
+.phoneEmailLine p {
+		text-align: center;
+		text-decoration: none;
+		width:  40%;
+	 	white-space: nowrap; /* Отменяем перенос текста */
+    	overflow: hidden; /* Обрезаем содержимое */
+    	text-overflow: ellipsis;
+	}
+.phoneEmailLine a{
+	text-align: center;
+	text-decoration: none;
+	color: aqua;
+	width:  50%;
+}

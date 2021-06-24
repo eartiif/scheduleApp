@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI Emoji', sans-serif;
+}
+
+/*Навигация*/
+.upperLine {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	background: #808080;
+}
+
+.baseUpperLine{
+	position: fixed;
+	width: 100%;
+}
+
+.upperLine p {
+	width: 100%;
+	text-align: center;
+	font-size: calc(30px + (35 - 30) * ( (100vw - 200px) / ( 1024 - 200) ));
+	color: white;
+	z-index: 0;
+	}
+
+.icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: calc(30px + (35 - 30) * ( (100vw - 200px) / ( 1024 - 200) ));
+	fill: white;
+	margin-left: 10px;
+	margin-right: 10px;
+	z-index: 2;
+}
+
+.addBTN {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	height: calc(30px + (35 - 30) * ( (100vw - 200px) / ( 1024 - 200) ));
+	width: calc(30px + (35 - 30) * ( (100vw - 200px) / ( 1024 - 200) ));
+}
+.uperrSell{
+	width: 100%;
+	display: flex;
+	height: 30px;
+	justify-content: center;
+	align-content: center;
+	font-size: calc(30px + (35 - 30) * ( (100vw - 200px) / ( 1024 - 200) ));
+	color: white;
+	z-index: 0;
+}
+.uperrSell select{
+	font-size: 20px;
+	color: white;
+	background:#AFAEAE;
+}
+
+.uperrSell select option:disabled {
+    color: #000;
+}
+
+
+/*КОНТЕНТ*/
+.content ul {
+	padding: 0px 5px;
+	margin: 0;
+}
+
+
+
+/*popUp для ввода*/
+.centrator {
+	position: fixed;
+	transition: all 0.4s;
+	width: 100%;
+	top: 50%;
+	display: none;
+	justify-content: center;
+}
+
+.addConteiner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	-webkit-box-shadow: -17px -23px 96px 45px rgba(56, 59, 62, 0.2) inset;
+	-moz-box-shadow: -17px -23px 96px 45px rgba(56, 59, 62, 0.2) inset;
+	box-shadow: -17px -23px 96px 45px rgba(56, 59, 62, 0.2) inset;
+	border-radius: 15px;
+	width: 70%;
+}
+
+.addline {
+	width: 60vw;
+	text-align: center;
+	margin: 5px;
+	border-radius: 15px;
+}
+
+.btnLine{
+	padding-top: 5px;
+	display: flex;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	width: 100%;
+	justify-content: space-around;
+}
+
+
+/*SVG*/
+.menuSVG {
+    height: 7vw;
+    width: 7vw;
+    fill: white;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.SVGIcons {
+    height: 5vw;
+    width: 5vw;
+    color: black;
+    margin-right: 10px;
+}
+
+.addSvg{
+	width: 100%;
+	height: 100%;
+}
+.addSvg path{
+	width: calc(20px + (30 - 30) * ( (100vw - 200px) / ( 1024 - 200) ));
+	height: calc(20px + (30 - 30) * ( (100vw - 200px) / ( 1024 - 200) ));
+}
+.trashConteiner{
+	position: relative;
+}
+.frontIc{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+
+.popUpShow{
+	display: flex;
+}
+
+
+
+
+
+.itemBTN{
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.frontIc{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}

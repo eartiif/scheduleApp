@@ -108,16 +108,67 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\sprites.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\addPara.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\developers.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\discipline.html" />
+  </ItemGroup>
+  <ItemGroup>
     <AndroidAsset Include="Assets\index.html" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\menu.js" />
+    <AndroidAsset Include="Assets\settings.html" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\menu.css" />
+    <AndroidAsset Include="Assets\teachers.html" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\sprites.txt" />
+    <AndroidAsset Include="Assets\css\chief-slider.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\css\discipline.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\css\general.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\css\main.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\css\menu.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\css\teachers.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\back.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\chief-slider.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\discipline.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\main.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\menu.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\settings.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\teachers.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\js\woth.js" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
